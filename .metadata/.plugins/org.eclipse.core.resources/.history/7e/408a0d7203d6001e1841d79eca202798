@@ -1,0 +1,27 @@
+package com.project.Demohiber;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+       Humans priyu = new Humans();
+       priyu.setHid(170);
+       priyu.setName("priyanshu");
+       priyu.setAdd("Motihari");
+       
+       Configuration conn = new Configuration().configure().addAnnotatedClass(Humans.class);
+       SessionFactory sf = conn.buildSessionFactory();
+       Session session = sf.openSession();
+       
+       
+       Transaction tx = session.beginTransaction();
+       session.save(priyu);
+       tx.commit();
+       
+    }
+}

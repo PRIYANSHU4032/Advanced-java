@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.sql.Statement"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.http.Cookie"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServlet"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServletRequest"/>
+    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.ServletContext"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.ServletConfig"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.annotation.WebServlet"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="taglibreary.Students"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpSession"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="com.shopkro.Dao.Usersdata"/>
+    <fullyQualifiedTypeName name="com.mysql.cj.xdevapi.SessionFactory"/>
+    <fullyQualifiedTypeName name="java.lang.module.Configuration"/>
+    <fullyQualifiedTypeName name="com.mysql.cj.xdevapi.Session"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Embeddable"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.OneToOne"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.ManyToMany"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.ManyToOne"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.OneToMany"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.FetchType"/>
+    <fullyQualifiedTypeName name="org.hibernate.cfg.Configuration"/>
+    <fullyQualifiedTypeName name="org.hibernate.query.Query"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.TypedQuery"/>
+    <fullyQualifiedTypeName name="org.hibernate.query.NativeQuery"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Entity"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Id"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.EntityManagerFactory"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Persistence"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.EntityManager"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Stack"/>
+</qualifiedTypeNameHistroy>

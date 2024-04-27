@@ -1,0 +1,33 @@
+package com.project.Demohiber;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.service.ServiceRegistry;
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+       Humans priyu = new Humans();
+       priyu.setHid(11);
+       priyu.setName("sakshi");
+       priyu.setAddress("muzafferpur");
+       
+       Configuration conn = new Configuration().configure().addAnnotatedClass(Humans.class);
+       
+       ServiceRegistry reg = new StandardServiceRegistryBuilder().applySettings(conn.getProperties()).build();
+       SessionFactory sf = conn.buildSessionFactory(reg);
+       Session session = sf.openSession();
+       
+       
+       Transaction tx = session.beginTransaction();
+       
+       
+       session.save(priyu);
+       tx.commit();
+       
+    }
+}

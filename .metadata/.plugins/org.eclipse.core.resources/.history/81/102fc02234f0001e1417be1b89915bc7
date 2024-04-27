@@ -1,0 +1,41 @@
+package com.shivam;
+
+import java.util.Stack;
+
+public class DuplicateParentheses {
+    
+    public static boolean isDuplicate(String str) {
+        Stack<Character> stack = new Stack<>();
+        
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            
+            // If current character is ')'
+            if (ch == ')') {
+                // Pop characters from stack until '(' is found
+                // If no characters found between '(', ')', return true
+                if (stack.peek() == '(') {
+                    return true;
+                }
+                while (!stack.isEmpty() && stack.peek() != '(') {
+                    stack.pop();
+                }
+                // Pop '('
+                stack.pop();
+            } else {
+                // Push other characters to stack
+                stack.push(ch);
+            }
+        }
+        // If there are no duplicate parentheses
+        return false;
+    }
+    
+    public static void main(String[] args) {
+        String str1 = "((a+b)+(c+d))";
+        String str2 = "((a+b))+c+d)";
+        
+        System.out.println("String 1 has duplicate parentheses: " + isDuplicate(str1));
+        System.out.println("String 2 has duplicate parentheses: " + isDuplicate(str2));
+    }
+}

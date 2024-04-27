@@ -1,0 +1,49 @@
+package com.jaganath.hello;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.service.ServiceRegistry;
+
+
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        //Student stm = new Student();
+       // stm.setName("Dipendra");
+       // stm.setRollno("109");
+        //stm.setCourse("BCA");
+        
+        //Books bk = new Books();
+        //bk.setBid("133");
+       // bk.setBname("Bussiness");
+       // bk.setAuthor("Shivam");
+       // bk.setCategory("IT");
+       // stm.getBook().add(bk);
+        
+        Configuration conn = new Configuration().configure().addAnnotatedClass(Student.class).addAnnotatedClass(Books.class);
+        
+        ServiceRegistry reg = new StandardServiceRegistryBuilder().applySettings(conn.getProperties()).build();
+        
+        SessionFactory sf = conn.buildSessionFactory(reg);
+        
+        Session session = sf.openSession();
+        
+        
+        Transaction tx = session.beginTransaction();
+        
+        //session.save(stm);
+        //session.save(bk);
+        
+        session.getTransaction().commit();
+        
+    }
+}

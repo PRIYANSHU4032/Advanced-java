@@ -1,0 +1,32 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@ page import="java.sql.*" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<%
+	String url = "jdbc:mysql://localhost:3306/mysql";
+    String username = "root";
+    String password = "8539909495";
+
+    
+
+    
+    try {
+        Connection connection = DriverManager.getConnection(url, username, password);
+        Statement smt = connection.createStatement();
+        // Corrected the query string
+        String query = "create table fraz (eid int, address varchar(255), name varchar(255))";
+        smt.execute(query);
+        System.out.println("Table created");
+        connection.close();
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+        %>
+</body>
+</html>

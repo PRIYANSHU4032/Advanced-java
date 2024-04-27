@@ -1,0 +1,5 @@
+#Tomcat publish data
+#Sat Feb 24 07:11:06 IST 2024
+org.eclipse.jst.jee.server\:Shoper=/Users/apple/Downloads/apache-tomcat-10.1.18/wtpwebapps/Shoper
+org.eclipse.jst.jee.server\:UserRegistration=/Users/apple/Downloads/apache-tomcat-10.1.18/wtpwebapps/UserRegistration
+org.eclipse.jst.jee.server\:WEBsecond=/Users/apple/Downloads/apache-tomcat-10.1.18/wtpwebapps/WEBsecond

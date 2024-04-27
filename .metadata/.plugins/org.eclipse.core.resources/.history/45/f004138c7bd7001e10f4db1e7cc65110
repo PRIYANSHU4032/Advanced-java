@@ -1,0 +1,40 @@
+package com.shivam;
+
+public class PriyanshuPrashant {
+	public static class Node{
+		int data;
+		Node next;
+		public Node(int data) {
+			this.data = data;
+			this.next = null;
+		}
+		
+		
+	}
+	public static Node head;
+	public static Node tail;
+	
+	public static boolean isCycle() {
+		Node slow = head;
+		Node fast = head;
+		while(fast != null && fast.next != null) {
+			slow = slow.next;
+			fast = fast.next.next;
+			if(slow == fast) {
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	public static void main(String args[]) {
+		PriyanshuPrashant pp = new PriyanshuPrashant();
+		pp.head = new Node(1);
+		pp.head.next = new Node(2);
+		pp.head.next.next = new Node(3);
+		pp.head.next.next.next = head;
+		System.out.println(pp.isCycle());
+		
+	}
+
+}
